@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Display = e => {
+const Display = ({ result }) => {
   return (
     <div className="result">
-      <p>{result}</p>
+      <p>
+        <input type="text" placeholder="0" value={result} />
+      </p>
     </div>
   );
 };
